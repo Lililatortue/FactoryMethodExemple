@@ -1,5 +1,5 @@
 ﻿
-
+//mini implementation d'une classe qui peut beneficier d'un Factory methode
 class ProductList {
     List<Product> list;
 

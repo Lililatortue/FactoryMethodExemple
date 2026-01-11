@@ -10,7 +10,7 @@
 // type : Creational Pattern
 // UseCase:
 //      Definir une interface pour creer un objet tous en laissant 
-//      l'objet definir comment il doit etre creer.
+//      l'objet definir comment il doit etre creer. lol
 //
 // Diagram en Reference:
 //      FactoryMethod_theorique.drawio
@@ -24,7 +24,7 @@ public interface FactoryMethod
     public Product newProduct();                           //constructeur par default
 }
 
-// les implementation concrete 
+//-------------- les implementation concrete --------------//
 public class MakeSofa : FactoryMethod
 {
     public Product createProduct(int taille, int couleur)
@@ -58,7 +58,7 @@ public class MakeMeuble: FactoryMethod
 //          {
 //              return constructeurType1()
 //          }
-//          else if 
+//          else if(type.2) 
 //          {
 //              return constructeurType2()
 //          }
@@ -70,11 +70,11 @@ public class MakeMeuble: FactoryMethod
 //          tous les fois que tu modifis l'Enum tu dois te rappeller de modifier le constructeur
 //          
 //      Ceci est un anti-pattern, souvent une parfaite opportunitee d'etre remplacer par la factory methode pattern, 
-//      
+//      En reprenant mon exemple, si je veux commencer a produire des chaises je peux juste creer un subclass MakeChaise et un subclasse Chaise
 
 
 
-
+// le reste de l'exemple
 
 // la fonctionnalite
 public interface Product
